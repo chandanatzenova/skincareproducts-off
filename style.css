@@ -1793,3 +1793,600 @@ body {
     }
 
 }
+/* =========================================
+   PART 4
+   CUSTOMIZED SKINCARE + TESTIMONIAL
+   ========================================= */
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.custom-review-section {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 220px;
+
+    background: #f8f3e7;
+}
+
+
+/* =========================================
+   CUSTOMIZED SKINCARE PANEL
+   ========================================= */
+
+.customized-panel {
+
+    position: relative;
+
+    min-height: 220px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            100deg,
+            #faf5e9 0%,
+            #f2ecdc 100%
+        );
+}
+
+
+/* =========================================
+   CUSTOMIZED TEXT
+   ========================================= */
+
+.customized-content {
+
+    width: 53%;
+
+    padding-left: 9%;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.customized-content h2 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    color: #4f6047;
+
+    font-size: 27px;
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    margin-bottom: 12px;
+}
+
+
+.customized-content h2 span {
+
+    color: #526348;
+}
+
+
+.customized-content p {
+
+    max-width: 245px;
+
+    color: #77766b;
+
+    font-size: 7px;
+
+    line-height: 1.65;
+
+    margin-bottom: 13px;
+}
+
+
+/* =========================================
+   BUILD YOUR ROUTINE BUTTON
+   ========================================= */
+
+.routine-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 94px;
+
+    min-height: 22px;
+
+    padding: 5px 9px;
+
+    background: #c6a254;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 5.8px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.25px;
+
+    transition: all 0.25s ease;
+}
+
+
+.routine-button:hover {
+
+    background: #a98742;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   CUSTOMIZED PRODUCT IMAGE
+   ========================================= */
+
+.customized-image {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 0;
+
+    width: 53%;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: flex-end;
+
+    z-index: 1;
+}
+
+
+.customized-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+}
+
+
+/* =========================================
+   SOFT IMAGE OVERLAY
+   ========================================= */
+
+.customized-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 35%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            to right,
+            #f7f1e4,
+            rgba(247,241,228,0)
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+
+/* =========================================
+   TESTIMONIAL PANEL
+   ========================================= */
+
+.testimonial-panel {
+
+    position: relative;
+
+    min-height: 220px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px 11%;
+
+    background: #faf6ec;
+
+    border-left: 1px solid #e5ddca;
+}
+
+
+/* =========================================
+   STARS
+   ========================================= */
+
+.testimonial-stars {
+
+    color: #c6a254;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 13px;
+}
+
+
+/* =========================================
+   TESTIMONIAL QUOTE
+   ========================================= */
+
+.testimonial-panel blockquote {
+
+    max-width: 360px;
+
+    color: #5d6257;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 17px;
+
+    line-height: 1.35;
+
+    font-weight: 500;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   CUSTOMER NAME
+   ========================================= */
+
+.customer-name {
+
+    color: #59634f;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    margin-top: 12px;
+}
+
+
+
+/* =========================================
+   REVIEW ARROWS
+   ========================================= */
+
+.review-arrow {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    color: #73806b;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 28px;
+
+    font-weight: 300;
+
+    cursor: pointer;
+
+    padding: 5px;
+
+    line-height: 1;
+}
+
+
+.review-arrow:hover {
+
+    color: #b2924c;
+}
+
+
+.review-left {
+
+    left: 5%;
+}
+
+
+.review-right {
+
+    right: 5%;
+}
+
+
+
+/* =========================================
+   REVIEW DOTS
+   ========================================= */
+
+.review-dots {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    margin-top: 17px;
+}
+
+
+.review-dots span {
+
+    width: 4px;
+
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: #c8c8bb;
+
+    display: block;
+}
+
+
+.review-dots .active-dot {
+
+    width: 5px;
+
+    height: 5px;
+
+    background: #6d805c;
+}
+
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .custom-review-section {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .customized-content {
+
+        width: 60%;
+
+        padding-left: 7%;
+    }
+
+
+    .customized-content h2 {
+
+        font-size: 23px;
+    }
+
+
+    .customized-content p {
+
+        max-width: 200px;
+
+        font-size: 6.5px;
+    }
+
+
+    .customized-image {
+
+        width: 50%;
+    }
+
+
+    .testimonial-panel {
+
+        padding: 25px 8%;
+    }
+
+
+    .testimonial-panel blockquote {
+
+        font-size: 15px;
+    }
+
+}
+
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .custom-review-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* CUSTOMIZED PANEL */
+
+    .customized-panel {
+
+        min-height: 300px;
+
+        align-items: flex-start;
+
+        padding-top: 35px;
+    }
+
+
+    .customized-content {
+
+        width: 57%;
+
+        padding-left: 7%;
+
+        z-index: 3;
+    }
+
+
+    .customized-content h2 {
+
+        font-size: 27px;
+    }
+
+
+    .customized-content p {
+
+        max-width: 190px;
+
+        font-size: 7px;
+    }
+
+
+    .customized-image {
+
+        width: 55%;
+
+        height: 100%;
+
+        opacity: 0.95;
+    }
+
+
+    /* TESTIMONIAL */
+
+    .testimonial-panel {
+
+        min-height: 280px;
+
+        padding: 45px 12%;
+    }
+
+
+    .testimonial-stars {
+
+        margin-bottom: 15px;
+    }
+
+
+    .testimonial-panel blockquote {
+
+        font-size: 19px;
+
+        max-width: 360px;
+    }
+
+
+    .review-left {
+
+        left: 6%;
+    }
+
+
+    .review-right {
+
+        right: 6%;
+    }
+
+}
+
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    .customized-panel {
+
+        min-height: 275px;
+    }
+
+
+    .customized-content {
+
+        width: 60%;
+    }
+
+
+    .customized-content h2 {
+
+        font-size: 24px;
+    }
+
+
+    .customized-content p {
+
+        max-width: 165px;
+
+        font-size: 6.5px;
+    }
+
+
+    .testimonial-panel {
+
+        min-height: 260px;
+
+        padding-left: 13%;
+
+        padding-right: 13%;
+    }
+
+
+    .testimonial-panel blockquote {
+
+        font-size: 17px;
+    }
+
+       }
