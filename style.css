@@ -1,0 +1,826 @@
+/* =========================================
+   LUMIÈRE SKIN
+   PART 1 — HEADER + HERO
+   ========================================= */
+
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #f7f2e7;
+    color: #3f5139;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* =========================================
+   COLOR SYSTEM
+   ========================================= */
+
+:root {
+
+    --cream: #f7f2e7;
+    --cream-light: #fbf8f0;
+
+    --sage: #6d805c;
+    --sage-dark: #536846;
+
+    --green-text: #42533b;
+
+    --gold: #c6a254;
+    --gold-light: #d7bc78;
+
+    --border: #ded7c5;
+
+    --white: #ffffff;
+}
+
+
+/* =========================================
+   TOP ANNOUNCEMENT BAR
+   ========================================= */
+
+.announcement-bar {
+
+    height: 26px;
+
+    background: #6b7d5a;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 4.5%;
+
+    font-size: 8px;
+
+    letter-spacing: 0.2px;
+}
+
+
+.shipping {
+    opacity: 0.95;
+}
+
+
+.top-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    font-size: 7px;
+
+    opacity: 0.95;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+
+    height: 66px;
+
+    background: #fbf8f0;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 4.5%;
+
+    border-bottom: 1px solid #e7e0d0;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* ---------- LOGO ---------- */
+
+.logo {
+
+    width: 145px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    flex-shrink: 0;
+}
+
+
+.logo-symbol {
+
+    color: #a8945d;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    transform: rotate(-8deg);
+}
+
+
+.logo-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    line-height: 1;
+}
+
+
+.logo-text span {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    color: #657258;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    letter-spacing: 1.2px;
+}
+
+
+.logo-text small {
+
+    color: #657258;
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+
+    margin-top: 4px;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+   ========================================= */
+
+.navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex: 1;
+}
+
+
+.navigation a {
+
+    text-decoration: none;
+
+    color: #505a49;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.2px;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+
+.navigation a:hover {
+
+    color: #bd9950;
+}
+
+
+.arrow {
+
+    font-size: 10px;
+
+    margin-left: 2px;
+}
+
+
+/* =========================================
+   NAVIGATION ICONS
+   ========================================= */
+
+.nav-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    width: 100px;
+
+    justify-content: flex-end;
+
+    color: #4e5849;
+}
+
+
+.nav-icon {
+
+    font-size: 20px;
+
+    font-weight: 300;
+
+    line-height: 1;
+}
+
+
+.cart-icon {
+
+    position: relative;
+
+    font-size: 17px;
+}
+
+
+.cart-icon small {
+
+    position: absolute;
+
+    right: -7px;
+
+    top: -7px;
+
+    width: 12px;
+
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #c5a35b;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 7px;
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+
+    min-height: 430px;
+
+    background:
+
+        radial-gradient(
+            circle at 72% 30%,
+            rgba(255,255,255,0.85),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            110deg,
+            #faf5e9 0%,
+            #f4eee1 55%,
+            #eee8d9 100%
+        );
+
+    display: flex;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HERO LEFT CONTENT
+   ========================================= */
+
+.hero-content {
+
+    width: 47%;
+
+    padding:
+
+        62px
+        0
+        45px
+        6%;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.hero-content h1 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    color: #46553f;
+
+    font-size: clamp(40px, 4vw, 60px);
+
+    line-height: 0.92;
+
+    font-weight: 500;
+
+    letter-spacing: -1.5px;
+}
+
+
+.hero-content h1 span {
+
+    color: #c29d4d;
+
+    font-weight: 600;
+}
+
+
+.hero-description {
+
+    margin-top: 25px;
+
+    color: #4f554b;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   SHOP BUTTON
+   ========================================= */
+
+.shop-button {
+
+    margin-top: 24px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    min-width: 106px;
+
+    padding: 11px 15px;
+
+    background: #6b805b;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 8px;
+
+    letter-spacing: 0.5px;
+
+    font-weight: 500;
+
+    transition: all 0.25s ease;
+}
+
+
+.shop-button span {
+
+    font-size: 15px;
+
+    line-height: 0;
+}
+
+
+.shop-button:hover {
+
+    background: #536846;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO FEATURES
+   ========================================= */
+
+.hero-features {
+
+    display: flex;
+
+    gap: 27px;
+
+    margin-top: 42px;
+}
+
+
+.feature {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #59654f;
+}
+
+
+.feature-icon {
+
+    color: #a6955f;
+
+    font-size: 20px;
+
+    line-height: 1;
+}
+
+
+.feature div:last-child {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.feature strong {
+
+    font-size: 7px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+.feature small {
+
+    font-size: 6px;
+
+    opacity: 0.85;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   RIGHT PRODUCT AREA
+   ========================================= */
+
+.hero-products {
+
+    width: 53%;
+
+    min-height: 430px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+}
+
+
+/* Product image */
+
+.product-image {
+
+    width: 92%;
+
+    max-width: 690px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: -3px;
+}
+
+
+/* =========================================
+   DECORATIVE LEAVES
+   ========================================= */
+
+.leaf {
+
+    position: absolute;
+
+    z-index: 1;
+
+    opacity: 0.65;
+
+    filter: saturate(0.65);
+
+}
+
+
+.leaf-one {
+
+    left: 4%;
+
+    bottom: 30px;
+
+    font-size: 85px;
+
+    transform: rotate(-30deg);
+}
+
+
+.leaf-two {
+
+    right: 5%;
+
+    top: 35px;
+
+    font-size: 65px;
+
+    transform: rotate(30deg);
+}
+
+
+/* =========================================
+   STONE BASE
+   ========================================= */
+
+.stone {
+
+    position: absolute;
+
+    bottom: -45px;
+
+    right: 2%;
+
+    width: 80%;
+
+    height: 105px;
+
+    background: linear-gradient(
+        135deg,
+        #9a927d,
+        #c1b8a1,
+        #8d8673
+    );
+
+    border-radius: 45% 40% 5% 8%;
+
+    opacity: 0.55;
+
+    z-index: 1;
+
+    transform: rotate(-2deg);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+    .navigation {
+
+        gap: 15px;
+    }
+
+    .navigation a {
+
+        font-size: 7px;
+    }
+
+    .logo {
+
+        width: 125px;
+    }
+
+    .nav-icons {
+
+        width: 85px;
+
+        gap: 12px;
+    }
+
+    .hero-content {
+
+        padding-left: 5%;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE NAVIGATION
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .announcement-bar {
+
+        padding: 0 4%;
+
+        font-size: 7px;
+    }
+
+
+    .top-links {
+
+        gap: 8px;
+
+        font-size: 6px;
+    }
+
+
+    .navbar {
+
+        height: 60px;
+
+        padding: 0 5%;
+    }
+
+
+    .logo {
+
+        width: auto;
+    }
+
+
+    .navigation {
+
+        display: none;
+    }
+
+
+    .nav-icons {
+
+        margin-left: auto;
+
+        width: auto;
+    }
+
+
+    .hero {
+
+        min-height: auto;
+
+        flex-direction: column;
+    }
+
+
+    .hero-content {
+
+        width: 100%;
+
+        padding: 55px 7% 35px;
+
+        text-align: center;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 48px;
+
+        line-height: 0.95;
+    }
+
+
+    .hero-description {
+
+        font-size: 11px;
+
+        margin-top: 20px;
+    }
+
+
+    .shop-button {
+
+        margin-top: 20px;
+    }
+
+
+    .hero-features {
+
+        justify-content: center;
+
+        gap: 18px;
+
+        margin-top: 30px;
+    }
+
+
+    .feature {
+
+        flex-direction: column;
+
+        gap: 3px;
+    }
+
+
+    .feature strong,
+    .feature small {
+
+        text-align: center;
+    }
+
+
+    .hero-products {
+
+        width: 100%;
+
+        min-height: 320px;
+    }
+
+
+    .product-image {
+
+        width: 100%;
+
+        max-width: 500px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 450px) {
+
+    .logo-text span {
+
+        font-size: 15px;
+    }
+
+
+    .logo-symbol {
+
+        font-size: 23px;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 40px;
+    }
+
+
+    .hero-features {
+
+        gap: 10px;
+    }
+
+
+    .feature-icon {
+
+        font-size: 17px;
+    }
+
+  }
